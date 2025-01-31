@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de producto</title>
+</head>
+<body>
+    <h2>Registrar producto</h2>
+    <form action="/registrar" method="post">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+        <br>
+        <label>Precio:</label>
+        <input type="number" name="precio" required>
+        <br>
+        <label>Descripción:</label>
+        <textarea name="descricpion" required></textarea>
+        <br>
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
